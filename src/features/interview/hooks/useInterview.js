@@ -61,7 +61,7 @@ export const useInterview=()=>{
 }
 
 const getResumePdf=async (interviewReportId)=>{
-  setLoading(false)
+  setLoading(true)
   let response=null
   try{
     response=await generateResumePdf({interviewReportId})
